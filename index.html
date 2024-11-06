@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otomoto Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Otomoto Clone</h1>
+    </header>
+    <main>
+        <section id="listing-form">
+            <h2>Dodaj Ogłoszenie</h2>
+            <form id="add-listing-form">
+                <input type="text" id="title" placeholder="Tytuł ogłoszenia" required>
+                <input type="text" id="description" placeholder="Opis" required>
+                <input type="number" id="price" placeholder="Cena" required>
+                <button type="submit">Dodaj Ogłoszenie</button>
+            </form>
+        </section>
+        <section id="listings">
+            <h2>Ogłoszenia</h2>
+            <div id="listings-container"></div>
+        </section>
+    </main>
+</body>
+</html>
